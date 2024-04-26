@@ -22,7 +22,7 @@ user2 = User.create!(
   password: "password"
 )
 
-# Crear posts para cada usuario
+
 post1 = user1.posts.create!(
   title: "First post by John",
   content: "This is John's first post. Welcome to my blog!"
@@ -32,14 +32,14 @@ post2 = user2.posts.create!(
   title: "Hello from Jane",
   content: "Hello everyone! This is my first post here."
 )
-# Crear tags
+
 tag1 = Tag.create!(name: "Technology")
 tag2 = Tag.create!(name: "Travel")
 tag3 = Tag.create!(name: "Food")
 tag4 = Tag.create!(name: "Nature")
 tag5 = Tag.create!(name: "Sports")
 
-# Asignar etiquetas a los posts
+
 post1.tags << tag1
 post2.tags << tag2
 post3.tags << tag3
